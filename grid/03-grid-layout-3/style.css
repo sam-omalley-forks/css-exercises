@@ -8,7 +8,6 @@
   display: grid;
   gap: 4px;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr 1fr 5fr 1fr;
   grid-template-areas:
     "header header"
     "sidebar nav"
@@ -28,6 +27,12 @@
 .header {
   background-color: #393f4d;
   grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  justify-self: start;
 }
 
 .menu ul,
@@ -104,4 +109,21 @@
 .footer p {
   font-size: 13px;
   font-weight: normal;  
+}
+
+.nav ul {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu ul {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav ul li,
+.menu ul li {
+  list-style: none;
 }
