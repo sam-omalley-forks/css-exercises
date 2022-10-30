@@ -35,6 +35,10 @@
   justify-self: start;
 }
 
+.menu {
+  align-self: center;
+}
+
 .menu ul,
 .menu li {
   font-size: 16px;
@@ -43,22 +47,25 @@
 .sidebar {
   background-color: #FF7755;
   grid-area: sidebar;
+  display: grid;
+  gap: 50px;
 }
 
-.sidebar .photo {
+.sidebar .photo,
+.sidebar .side-content {
   background-color: white;
   color: black;
-  font-size: 12px;
   font-weight: normal;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
   border-radius: 10px;
 }
 
 
 .sidebar .side-content {
-  background-color: white;
-  color: black;
   font-size: 16px;
-  font-weight: normal;
+  border-radius: 0;
 }
 
 .nav {
